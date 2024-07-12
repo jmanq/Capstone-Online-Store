@@ -18,14 +18,14 @@ pizzadata = {
 df = pd.DataFrame(pizzadata)
 
 # Add Sock_ID attribute
-df['Pizza_ID'] = np.arange(2, 1002)  # Incrementing number starting at 2
+df['Pizza_ID'] = np.arange(0, 1000)  # Incrementing number starting at 2
 
 
-toppings_list = {}
+toppings_list = []
 for i in range(1000):
     topping_amount = random.randint(0, 3)
     toppings = random.sample(['Perpperoni', 'Extra Cheese', 'Mushrooms', 'Onions', 'Sausage', 'Black Olives', 'Hot Oil', 'Bacon', 'Green Peppers', 'Red Peppers', 'Pineapple', 'Spinach'], topping_amount)
-    toppings_list.append('Toppings', toppings)
+    toppings_list.append(toppings)
 
 toppings_df = pd.DataFrame(toppings_list)
 toppings_df.columns = ['topping_1', 'topping_2', 'topping_3']

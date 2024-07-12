@@ -1,0 +1,41 @@
+[
+    {
+        "Size": "Large",
+        "Cheese": "Yes",
+        "Sauce": "No",
+        "Crust": "Gluten Free",
+        "Popularity": "4 Stars",
+        "Price": 20.48,
+        "Comments": "Sample comment",
+        "Pizza_ID": 54,
+        "topping_1": null,
+        "topping_2": null,
+        "topping_3": null
+    },
+    {
+        "Size": "Small",
+        "Cheese": "Yes",
+        "Sauce": "No",
+        "Crust": "Sicilian",
+        "Popularity": "3 Stars",
+        "Price": 16.78,
+        "Comments": "Sample comment",
+        "Pizza_ID": 55,
+        "topping_1": "Mushrooms",
+        "topping_2": null,
+        "topping_3": null
+    },
+    {
+        "Size": "Large",
+        "Cheese": "Yes",
+        "Sauce": "No",
+        "Crust": "Deep Dish",
+        "Popularity": "4 Stars",
+        "Price": 21.78,
+        "Comments": "Sample comment",
+        "Pizza_ID": 57,
+        "topping_1": "Red Peppers",
+        "topping_2": null,
+        "topping_3": null
+    }
+]
