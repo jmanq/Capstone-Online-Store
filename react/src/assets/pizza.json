@@ -1,50 +1,41 @@
 [
     {
-        "pizzaDetails": {
-            "id": "10005",
-            "size": "Large",
-            "cheese": true,
-            "crust": "Detroit",
-            "popularity": "4",
-            "price": "20",
-            "comment": "Please deliver quickly",
-            "sauce": true,
-            "topping_1": "Pepperoni",
-            "topping_2": "Mushroom",
-            "topping_3": "None"
-        },
-        "addedTimestamp": "2024-07-11T10:22:12.519940"
+        "Size": "Extra Large",
+        "Cheese": "No",
+        "Sauce": "Yes",
+        "Crust": "Thin Crust",
+        "Popularity": "3 Stars",
+        "Price": 27.9,
+        "Comments": "Sample comment",
+        "Pizza_ID": 2,
+        "topping_1": "Black Olives",
+        "topping_2": "Sausage",
+        "topping_3": "Perpperoni"
     },
     {
-        "pizzaDetails": {
-            "id": "10006",
-            "size": "Small",
-            "cheese": true,
-            "crust": "New York-Style",
-            "popularity": "5",
-            "price": "15",
-            "comment": "None",
-            "sauce": true,
-            "topping_1": "Pepperoni",
-            "topping_2": "Olive",
-            "topping_3": "Mushroom"
-        },
-        "addedTimestamp": "2024-07-12T10:22:12.519940"
+        "Size": "Large",
+        "Cheese": "No",
+        "Sauce": "Yes",
+        "Crust": "Stuffed Crust",
+        "Popularity": "5 Stars",
+        "Price": 16.48,
+        "Comments": "Sample comment",
+        "Pizza_ID": 3,
+        "topping_1": "Spinach",
+        "topping_2": null,
+        "topping_3": null
     },
     {
-        "pizzaDetails": {
-            "id": "10007",
-            "size": "Medium",
-            "cheese": true,
-            "crust": "Thin",
-            "popularity": "3",
-            "price": "10",
-            "comment": "This better be good",
-            "sauce": false,
-            "topping_1": "None",
-            "topping_2": "None",
-            "topping_3": "None"
-        },
-        "addedTimestamp": "2024-07-12T11:32:12.519940"
+        "Size": "Large",
+        "Cheese": "No",
+        "Sauce": "No",
+        "Crust": "Greek Style",
+        "Popularity": "5 Stars",
+        "Price": 17.27,
+        "Comments": "Sample comment",
+        "Pizza_ID": 4,
+        "topping_1": "Red Peppers",
+        "topping_2": "Spinach",
+        "topping_3": "Hot Oil"
     }
 ]

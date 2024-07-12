@@ -1,10 +1,28 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from "react";
 import './App.css'
 import Pizza from "./components/Pizza";
 import Search from "./components/Search"
 import pizza_data from './assets/pizza.json';
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(import.meta.env.VITE_SOCKS_API_URL);
+        if (!response.ok) {
+          throw new Error('Data could not be fetched!');
+        }
+        const json_response = await response.json();
+        setData(json_response); // assign JSON response to the data variable.
+      } catch (error) {
+        console.error('Error fetching socks:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -48,8 +66,8 @@ function App() {
             Craving a delicious slice? 🍕 Hit that Order button and we'll have it delivered to you in under half an hour!
             <div className="card-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
               {
-                pizza_data.map((pizza) => (
-                  <Pizza key={pizza.id} data={pizza} />
+                data.map((pizza) => (
+                  <Pizza key={pizza._id} data={pizza} />
                 ))
               }
             </div>
