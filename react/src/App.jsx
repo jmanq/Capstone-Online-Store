@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './App.css'
 import Pizza from "./components/Pizza";
 import Search from "./components/Search"
+import Cart from "./components/Cart"
 import pizza_data from './assets/pizza.json';
 
 function App() {
@@ -51,9 +52,7 @@ function App() {
                   <li><a className="dropdown-item" href="#">Customer Support</a></li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              <Cart />
             </ul>
             <Search />
           </div>
