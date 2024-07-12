@@ -46,8 +46,13 @@ function App() {
         <div className="container-fluid">
           <div className="row">
             Craving a delicious slice? 🍕 Hit that Order button and we'll have it delivered to you in under half an hour!
-            <div className="card-container"></div>
-              <Pizza data={pizza_data} />
+            <div className="card-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+              {
+                pizza_data.map((pizza) => (
+                  <Pizza key={pizza.id} data={pizza} />
+                ))
+              }
+            </div>
           </div>
         </div>
       </main>

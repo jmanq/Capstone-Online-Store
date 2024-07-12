@@ -1,14 +1,50 @@
-{
-    "pizzaDetails": {
-        "size": "Large",
-        "cheese": true,
-        "crust": "Detroit",
-        "popularity": "4",
-        "price": "20",
-        "comment": "Please deliver quickly",
-        "sauce": true,
-        "id": "10005",
-        "toppings": "Pepperoni"
+[
+    {
+        "pizzaDetails": {
+            "id": "10005",
+            "size": "Large",
+            "cheese": true,
+            "crust": "Detroit",
+            "popularity": "4",
+            "price": "20",
+            "comment": "Please deliver quickly",
+            "sauce": true,
+            "topping_1": "Pepperoni",
+            "topping_2": "Mushroom",
+            "topping_3": "None"
+        },
+        "addedTimestamp": "2024-07-11T10:22:12.519940"
     },
-    "addedTimestamp": "2024-07-12T10:22:12.519940"
-}
+    {
+        "pizzaDetails": {
+            "id": "10006",
+            "size": "Small",
+            "cheese": true,
+            "crust": "New York-Style",
+            "popularity": "5",
+            "price": "15",
+            "comment": "None",
+            "sauce": true,
+            "topping_1": "Pepperoni",
+            "topping_2": "Olive",
+            "topping_3": "Mushroom"
+        },
+        "addedTimestamp": "2024-07-12T10:22:12.519940"
+    },
+    {
+        "pizzaDetails": {
+            "id": "10007",
+            "size": "Medium",
+            "cheese": true,
+            "crust": "Thin",
+            "popularity": "3",
+            "price": "10",
+            "comment": "This better be good",
+            "sauce": false,
+            "topping_1": "None",
+            "topping_2": "None",
+            "topping_3": "None"
+        },
+        "addedTimestamp": "2024-07-12T11:32:12.519940"
+    }
+]
