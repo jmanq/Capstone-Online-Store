@@ -1,6 +1,8 @@
 import React from 'react';
 
+
 const Pizza = (props) => {
+
     return (
         <div className="card" style={{ flex: '1', minWidth: '300px', maxWidth: '45%' }}>
             <div className="card-body">
@@ -16,6 +18,7 @@ const Pizza = (props) => {
                 <div className="card-text">Popularity: {props.data.Popularity}</div>
                 <div className="card-text">Pizza ID: {props.data.Pizza_ID}</div>
             </div>
+            <button className="btn btn-sm btn-danger" onClick={() => setData() }>Add to Cart</button>
         </div>
     );
 };

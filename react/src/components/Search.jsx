@@ -12,15 +12,16 @@ const Search = (props) => {
                 "Content-Type": "application/json",
             },
         })
-        .then((response) => response.json())
-        .then((data) => {
-            // Handle the response data
-            console.log(data);
-        })
-        .catch((error) => {
-            // Handle any errors
-            console.error(error);
-        });
+            .then((response) => response.json())
+            .then((data) => {
+                // Handle the response data
+                props.setData(data);
+                console.log(data);
+            })
+            .catch((error) => {
+                // Handle any errors
+                console.error(error);
+            });
     };
 
     const handleChange = (e) => {
