@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(import.meta.env.VITE_SOCKS_API_URL);
+        const response = await fetch(import.meta.env.VITE_PIZZAS_API_URL);
         if (!response.ok) {
           throw new Error('Data could not be fetched!');
         }
