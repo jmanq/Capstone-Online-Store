@@ -1,24 +1,21 @@
 import React from 'react';
 
 
-const Pizza = (props) => {
+const PizzaCart = (props) => {
 
-    let addProduct_url = "http://localhost:3000/cart/addProduct";
+    let deleteProduct_url = "http://localhost:3000/cart/getCart/";
      
-    const addProduct = (data) => {
-        fetch(addProduct_url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
+    const deleteProduct = (data) => {
+        fetch(deleteProduct_url + data, {
+            method: "delete"
+            
         })
     };
 
     function handleClick(data) {
-        addProduct(data);
-        window.location='http://localhost:5173/';
-        alert("Your item has been added to the cart!");
+        deleteProduct(data);
+        window.location='http://localhost:5173/cart';
+        alert("Your item has been removed from the cart!");
     };
 
     return (
@@ -36,9 +33,9 @@ const Pizza = (props) => {
                 <div className="card-text">Popularity: {props.data.Popularity}</div>
                 <div className="card-text">Pizza ID: {props.data.Pizza_ID}</div>
             </div>
-            <button className="btn btn-sm btn-danger" onClick={() => handleClick(props.data) }>Add to Cart</button>
+            <button className="btn btn-sm btn-danger" onClick={() => handleClick(props.data.Pizza_ID) }>Remove</button>
         </div>
     );
 };
 
-export default Pizza;
+export default PizzaCart;
