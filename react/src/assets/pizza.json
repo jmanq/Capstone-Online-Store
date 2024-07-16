@@ -1,0 +1,41 @@
+[
+    {
+        "Size": "Extra Large",
+        "Cheese": "No",
+        "Sauce": "Yes",
+        "Crust": "Thin Crust",
+        "Popularity": "3 Stars",
+        "Price": 27.9,
+        "Comments": "Sample comment",
+        "Pizza_ID": 2,
+        "topping_1": "Black Olives",
+        "topping_2": "Sausage",
+        "topping_3": "Perpperoni"
+    },
+    {
+        "Size": "Large",
+        "Cheese": "No",
+        "Sauce": "Yes",
+        "Crust": "Stuffed Crust",
+        "Popularity": "5 Stars",
+        "Price": 16.48,
+        "Comments": "Sample comment",
+        "Pizza_ID": 3,
+        "topping_1": "Spinach",
+        "topping_2": null,
+        "topping_3": null
+    },
+    {
+        "Size": "Large",
+        "Cheese": "No",
+        "Sauce": "No",
+        "Crust": "Greek Style",
+        "Popularity": "5 Stars",
+        "Price": 17.27,
+        "Comments": "Sample comment",
+        "Pizza_ID": 4,
+        "topping_1": "Red Peppers",
+        "topping_2": "Spinach",
+        "topping_3": "Hot Oil"
+    }
+]
